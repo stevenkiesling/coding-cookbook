@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+EXECUTABLE="$LAMBDA_TASK_ROOT/bin/$(echo $_HANDLER | cut -d. -f1)"
+/opt/ld-musl-x86_64.so.1 --library-path /opt/lib $EXECUTABLE

@@ -1,0 +1,5 @@
+deploy
+terraform/.terraform
+terraform/*.tfstate*
+aws-tester/aws-tester
+aws-tester/edge.jpeg
